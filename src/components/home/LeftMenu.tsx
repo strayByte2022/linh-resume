@@ -6,14 +6,16 @@ import SocialLinks from './LeftMenu/SocialLinks'
 import BasicInfo from './LeftMenu/BasicInfo'
 import Languages from './LeftMenu/Languages'
 import Skills from './LeftMenu/Skills'
-import DownloadResume from './LeftMenu/DownloadResume'
+
+import { DownloadOutlined } from '@ant-design/icons'
+import DownloadResumeButton from './LeftMenu/DownloadResumeButton'
 
 const LeftMenu = () => {
   const { Meta } = Card
   return (
     <Card
       
-      style={{ width: '305px  ' }}
+      style={{ width: '20% ', minWidth:'305px' , height:'fit-content'}}
     >
       <div className='justify-center my-8 grid'>
         <Avatar
@@ -33,7 +35,8 @@ const LeftMenu = () => {
       <BasicInfo/>
       <Languages/>
       <Skills/>
-      <DownloadResume/>
+      {/* <DownloadResumeButton content='Download CV' icon={<DownloadOutlined/>} onClick={null}/> */}
+      <DownloadResumeButton content='Download CV' icon={<DownloadOutlined/>} onClick={()=>{console.warn('Resume Downloaded')}}/>
     </Card>
   )
 }
