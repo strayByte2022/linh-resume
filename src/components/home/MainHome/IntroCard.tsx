@@ -18,7 +18,7 @@ const IntroCard = () => {
 
                 <div >
                     <Typography.Title style={{fontSize:TitleSize}}>
-                        I'm Vương Hồng Lĩnh
+                        I am Vương Hồng Lĩnh
 
                     </Typography.Title>
                     <Typography.Title style={{ color: primaryColor, fontSize:TitleSize }}>
