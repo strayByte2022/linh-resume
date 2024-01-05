@@ -5,6 +5,7 @@ import EducationCard from './MainHome/EducationCard'
 import { BackTop, FloatButton, Typography } from 'antd'
 import { EducationIntro, QualificationIntro } from '../constants/IntroText'
 import QualificationCard from './MainHome/QualificationCard'
+import CertificationCard from './MainHome/CertificationCard'
 
 
 const MainHome = () => {
@@ -15,8 +16,12 @@ const MainHome = () => {
         <Typography.Title className='text-center mt-10'>Education</Typography.Title>
         <Typography.Paragraph className='text-center'>{EducationIntro}</Typography.Paragraph>
         <EducationCard/>
+        <Typography.Title className='text-center mt-10'>Certification</Typography.Title>
+        <Typography.Paragraph className='text-center'>{QualificationIntro}</Typography.Paragraph>
+        <CertificationCard/>
         <Typography.Title className='text-center mt-10'>Projects</Typography.Title>
         <Typography.Paragraph className='text-center'>{QualificationIntro}</Typography.Paragraph>
+        
         <QualificationCard/>
     </div>
   )
