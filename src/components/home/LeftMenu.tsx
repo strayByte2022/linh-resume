@@ -58,7 +58,7 @@ const LeftMenu = () => {
       <Languages />
       <Skills />
       {/* <DownloadResumeButton content='Download CV' icon={<DownloadOutlined/>} onClick={null}/> */}
-      <DownloadResumeButton content='Download CV' icon={<DownloadOutlined />} onClick={handleDownload} />
+      <DownloadResumeButton content='Download CV' icon={<DownloadOutlined />} onClick={handleDownload} tooltipTitle=''/>
     </Card>
   )
 }
