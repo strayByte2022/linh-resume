@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'hmm, this is my resume built based on Nextjs. what else?',
   openGraph: {
     ...openGraphImage,
-    title: 'Home',
+    title: 'CV của Lĩnh đẹp trai',
   },
 }
 
