@@ -41,7 +41,7 @@ const LeftMenu = () => {
     >
       <div className='justify-center my-8 grid'>
         <Avatar
-          src='https://i.ibb.co/G3nPQh7/profile.jpg'
+          src='/profile.png'
           alt='Vuong Hong Linh'
           size={100}
           shape='circle'
