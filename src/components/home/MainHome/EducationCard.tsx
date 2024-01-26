@@ -5,7 +5,7 @@ import React from 'react'
 
 const EducationCard = () => {
   return (
-    <Card className='grid '>
+    <Card className='grid' >
       {/* ! translate-y-1 for reposition the element vertically by 1px
           ! scale-100:  mean zoom the element by 100 when it is hovered */}
 

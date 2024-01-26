@@ -4,9 +4,9 @@ import { Card, Badge, Typography } from 'antd'
 import React from 'react'
 interface Props
 {
-    Title:string
-    Year:string
-    Description:string
+    Title:string | React.ReactNode
+    Year:string | React.ReactNode
+    Description:string | React.ReactNode
 }
 const CustomCard = ({Title,Year,Description}:Props) => {
   return (
