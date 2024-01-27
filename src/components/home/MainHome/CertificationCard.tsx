@@ -5,6 +5,12 @@ import { RightCircleOutlined } from '@ant-design/icons'
 import { primaryColor } from '@/components/constants/color'
 
 const CertificationCard = () => {
+  const webCourseLink = "https://coursera.org/verify/XNN4F8BSEENM"
+  const handleOpenCertificate = ()=>
+  {
+    console.log("This is clicked")
+    window.open(webCourseLink,'_blank','popup')
+  }
   return (
     <Card className='grid'>
         <CustomCard Title={'Academic IELTS'} Year={'2020'} Description={'Band 7.0'} />
@@ -13,8 +19,8 @@ const CertificationCard = () => {
          Description={
          <Button className='flex rounded-full items-center w-40' 
          style={{borderColor:'black', color:'black'}} 
-         href='https://coursera.org/verify/XNN4F8BSEENM'
          
+         onClick={handleOpenCertificate}
          >Show credential {<RightCircleOutlined  className='text-center'/>}
           
           </Button>
