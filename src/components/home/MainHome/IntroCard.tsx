@@ -9,16 +9,21 @@ import DownloadResumeButton from '../LeftMenu/DownloadResumeButton';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { ParagraphSize, TitleSize } from '@/components/constants/fontSize';
 import { request } from 'https';
+import BlogCard from '../BlogCard/BlogCard';
 
 
 const IntroCard = () => {
     const [quote, setQuote] = React.useState("")
+    const [openBlog, setOpenBlog] = React.useState(false)
+
+
     const fetchQuote = async () => {
         const res = await fetch("https://api.adviceslip.com/advice");
         const data = await res.json();
         // Now 'data' contains the parsed JSON
         console.log(data.slip.advice); // You can access the advice property
         setQuote(data.slip.advice)
+
 
     }
     useEffect(function () {
@@ -48,9 +53,9 @@ const IntroCard = () => {
                         <DownloadResumeButton
                             content='Read my blog!'
                             icon={<ArrowRightOutlined />}
-                            onClick={() => { console.info("Blog clicked") }}
+                            onClick={() => { setOpenBlog(true) }}
                             tooltipTitle='Blog is under development, please stay in touch :) ' />
-
+                        <BlogCard isOpen={openBlog} handleClose={()=>{setOpenBlog(false)}} />
 
                     </div>
 
