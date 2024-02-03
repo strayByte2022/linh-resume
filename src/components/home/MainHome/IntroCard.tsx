@@ -42,11 +42,14 @@ const IntroCard = () => {
                         Software
                         <span style={{ color: 'black' }}> Engineer</span>
                     </Typography.Title>
-                    <Typography.Paragraph style={{ minWidth: '325px', fontSize: '25px', fontStyle:"italic"}} >
+                    {/* <Typography.Paragraph style={{ minWidth: '325px', fontSize: '25px', fontStyle:"italic"}} >
                        "{quote}" 
                     </Typography.Paragraph>
                     <Typography.Paragraph style={{ minWidth: '325px', fontSize: ParagraphSize, fontStyle:"italic"}} >
                        (Refresh for different quote :) )
+                    </Typography.Paragraph> */}
+                    <Typography.Paragraph style={{ minWidth: '325px', fontSize: ParagraphSize, fontStyle:"italic"}} >
+                       {introText}
                     </Typography.Paragraph>
                     <div className='w-40'>
 
