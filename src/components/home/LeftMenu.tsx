@@ -22,14 +22,14 @@ const LeftMenu = () => {
 
 
     // Fetch the public URL of the file from Supabase Storage
-   const publicURL = supabase.storage.from('linh-cv').getPublicUrl("linh-resume");
+   const publicURL = supabase.storage.from('linh-cv').getPublicUrl("linh-resume-feb-2024");
   //  blob: file-like objects
    const response = await axios.get(publicURL.data['publicUrl'], { responseType: 'blob' });
    const blob = new Blob([response.data], { type: 'application/pdf' }); // Assuming PDF format
    const url = URL.createObjectURL(blob);
    const link = document.createElement('a');
    link.href = url;
-   link.setAttribute('download', 'linh-resume.pdf');
+   link.setAttribute('download', 'vuong-hong-linh-resume.pdf');
    link.click();
    URL.revokeObjectURL(url);
    
